@@ -1,0 +1,20 @@
+PODS:
+  - Eureka (4.3.0)
+  - TLPhotoPicker (1.7.4)
+
+DEPENDENCIES:
+  - Eureka
+  - TLPhotoPicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Eureka
+    - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
+  TLPhotoPicker: ced10aa9cdbce11bda2272f919cdace69e964239
+
+PODFILE CHECKSUM: e6d2bbc6e3e1d1006505e8754cef315b015cc874
+
+COCOAPODS: 1.6.0.beta.1

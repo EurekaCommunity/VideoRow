@@ -1,0 +1,6 @@
+framework module Pods_VideoRow {
+  umbrella header "Pods-VideoRow-umbrella.h"
+
+  export *
+  module * { export * }
+}
