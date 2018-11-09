@@ -1,5 +1,5 @@
-//  ImageRow.swift
-//  ImageRow ( https://github.com/EurekaCommunity/VideoRow )
+//  VideoRow.swift
+//  VideoRow ( https://github.com/EurekaCommunity/VideoRow )
 //
 //  Copyright (c) 2016 Xmartlabs SRL ( http://xmartlabs.com )
 //
