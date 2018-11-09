@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9925155294C7180779D583FF /* Pods-VideoRow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRow_Example.debug.xcconfig"; path = "Target Support Files/Pods-VideoRow_Example/Pods-VideoRow_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C5D563AECA73C1A623D80802 /* Pods_VideoRow_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoRow_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9D176927F9F2E16AB54D87A /* VideoRow.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VideoRow.podspec; path = ../VideoRow.podspec; sourceTree = "<group>"; };
+		E9D176927F9F2E16AB54D87A /* VideoRow.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VideoRow.podspec; path = ../VideoRow.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F05DEDC456DD6C47864B8212 /* Pods-VideoRow_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRow_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VideoRow_Tests/Pods-VideoRow_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F28896ED3A0E5B8B059BA642 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
