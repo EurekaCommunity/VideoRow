@@ -1,0 +1,29 @@
+PODS:
+  - Eureka (4.3.0)
+  - TLPhotoPicker (1.7.4)
+  - VideoRow (0.1.0):
+    - Eureka
+    - TLPhotoPicker
+
+DEPENDENCIES:
+  - Eureka
+  - TLPhotoPicker
+  - VideoRow (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Eureka
+    - TLPhotoPicker
+
+EXTERNAL SOURCES:
+  VideoRow:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
+  TLPhotoPicker: ced10aa9cdbce11bda2272f919cdace69e964239
+  VideoRow: 829f457a3f45807116b359e9861a5aae1c107bbb
+
+PODFILE CHECKSUM: ecf1ee2aaf41aef3075cd701e279a91b8041d0ee
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'VideoRow_Example' do
+  pod 'VideoRow', :path => '../'
+  pod 'Eureka'
+  pod 'TLPhotoPicker'
+  target 'VideoRow_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

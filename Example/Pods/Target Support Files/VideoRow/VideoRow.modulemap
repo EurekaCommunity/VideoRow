@@ -1,0 +1,6 @@
+framework module VideoRow {
+  umbrella header "VideoRow-umbrella.h"
+
+  export *
+  module * { export * }
+}
