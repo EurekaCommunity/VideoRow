@@ -7,7 +7,13 @@
 
 
 
-[![Platform](https://img.shields.io/cocoapods/p/VideoRow.svg?style=flat)](https://cocoapods.org/pods/VideoRow)
+# Introduction
+
+VideoRow is a Eureka custom row that allows us to take or choose a video fromt their media library.
+
+
+
+[![](https://gph.is/2RPO6YZ)
 
 
 
