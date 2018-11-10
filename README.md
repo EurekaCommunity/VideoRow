@@ -13,7 +13,7 @@ VideoRow is a Eureka custom row that allows us to take or choose a video fromt t
 
 
 
-[![](https://gph.is/2RPO6YZ)
+![](https://media.giphy.com/media/1dWPHjBPfkLu3x87EC/giphy.gif)
 
 
 
