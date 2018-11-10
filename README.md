@@ -9,7 +9,7 @@
 
 # Introduction
 
-VideoRow is a Eureka custom row that allows us to take or choose a video fromt their media library.
+VideoRow is a Eureka custom row that allows us to take or choose a video fromt our media library.
 
 
 
