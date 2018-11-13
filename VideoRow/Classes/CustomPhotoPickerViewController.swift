@@ -37,7 +37,7 @@ open class CustomPhotoPickerViewController: TLPhotosPickerViewController,TLPhoto
     open override func doneButtonTap() {
         print("done tapped")
         self.dismiss(animated: true) {
-            (self.row as? _VideoRow)?.value = self.selectedAssets[0]
+            (self.row as? _VideoRow)?.value = self.selectedAssets.first
             print((self.row as? _VideoRow)?.value?.type as Any)
             self.onDismissCallback?(self)
             self.row.updateCell()
