@@ -42,18 +42,42 @@ import AVFoundation
         super.collectionView(collectionView, didSelectItemAt: indexPath)
         self.doneButton.isEnabled = self.selectedAssets.count > 0
     }
+    
+    func didExceedMaximumNumberOfSelection(picker: TLPhotosPickerViewController) {
+        self.showExceededMaximumAlert(vc: picker)
+    }
+    
     func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
-        
+        picker.dismiss(animated: true) {
+            let alert = UIAlertController(title: "", message: "Denied albums permissions granted", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
-        
+        let alert = UIAlertController(title: "", message: "Denied camera permissions granted", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        picker.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func showExceededMaximumAlert(vc: UIViewController) {
+        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+    func showUnsatisifiedSizeAlert(vc: UIViewController) {
+        let alert = UIAlertController(title: "Oups!", message: "The required size is: 300 x 300", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        vc.present(alert, animated: true, completion: nil)
     }
     
      override func doneButtonTap() {
         print("done tapped")
         self.dismiss(animated: true) {
-            (self.row as? _VideoRow)?.value = self.selectedAssets[0]
+            (self.row as? _VideoRow)?.value = self.selectedAssets.first
             print((self.row as? _VideoRow)?.value?.type as Any)
             self.onDismissCallback?(self)
             self.row.updateCell()
