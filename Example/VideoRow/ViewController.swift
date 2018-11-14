@@ -10,7 +10,7 @@ import UIKit
 import Eureka
 import VideoRow
 import TLPhotoPicker
-import Foundation
+//import Foundation
 import Photos
 
 

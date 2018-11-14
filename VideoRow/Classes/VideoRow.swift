@@ -64,8 +64,8 @@ public enum VideoClearAction {
 
 //MARK: Row
 
-open class VideoRow<Cell: CellType>: OptionsRow<Cell>, PresenterRowType where Cell: BaseCell, Cell.Value == TLPHAsset {
-    public typealias PresenterRow = CustomPhotoPickerViewController
+ class VideoRow<Cell: CellType>: OptionsRow<Cell>, PresenterRowType where Cell: BaseCell, Cell.Value == TLPHAsset {
+    typealias PresenterRow = CustomPhotoPickerViewController
     
     /// Defines how the view controller will be presented, pushed, etc.
     open var presentationMode: PresentationMode<PresenterRow>?

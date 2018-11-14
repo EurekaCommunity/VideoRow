@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VideoRow'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Eureka row that allows us to take or select a video.'
   s.description      = <<-DESC
 This is an add-on to the many rows that are in the Eureka Community. This row will allow users to select a video from there library to export to a backend service of there choosing.
