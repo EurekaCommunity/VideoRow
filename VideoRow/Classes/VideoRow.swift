@@ -21,7 +21,6 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
 import Foundation
 import Eureka
 import AVFoundation
@@ -63,9 +62,8 @@ public enum VideoClearAction {
 
 
 //MARK: Row
-
- class VideoRow<Cell: CellType>: OptionsRow<Cell>, PresenterRowType where Cell: BaseCell, Cell.Value == TLPHAsset {
-    typealias PresenterRow = CustomPhotoPickerViewController
+open class VideoRow<Cell: CellType>: OptionsRow<Cell>, PresenterRowType where Cell: BaseCell, Cell.Value == TLPHAsset {
+    public typealias PresenterRow = CustomPhotoPickerViewController
     
     /// Defines how the view controller will be presented, pushed, etc.
     open var presentationMode: PresentationMode<PresenterRow>?

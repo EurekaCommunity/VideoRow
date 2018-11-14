@@ -11,7 +11,7 @@ import AVFoundation
 
 
 //customizable photos picker viewcontroller
- class CustomPhotoPickerViewController: TLPhotosPickerViewController,TLPhotosPickerViewControllerDelegate,TypedRowControllerType{
+ open class CustomPhotoPickerViewController: TLPhotosPickerViewController,TLPhotosPickerViewControllerDelegate,TypedRowControllerType{
     
     /// The row that pushed or presented this controller
     public var row: RowOf<TLPHAsset>!
@@ -20,7 +20,7 @@ import AVFoundation
     /// A closure to be called when the controller disappears.
     public var onDismissCallback : ((UIViewController) -> ())?
     
-    override func makeUI() {
+    override open func makeUI() {
         super.makeUI()
         self.doneButton.isEnabled = self.selectedAssets.count > 0
         delegate = self
@@ -38,16 +38,16 @@ import AVFoundation
         }
     }
     
-    override  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    override  open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, didSelectItemAt: indexPath)
         self.doneButton.isEnabled = self.selectedAssets.count > 0
     }
     
-    func didExceedMaximumNumberOfSelection(picker: TLPhotosPickerViewController) {
+    public func didExceedMaximumNumberOfSelection(picker: TLPhotosPickerViewController) {
         self.showExceededMaximumAlert(vc: picker)
     }
     
-    func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
+    public func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
         picker.dismiss(animated: true) {
             let alert = UIAlertController(title: "", message: "Denied albums permissions granted", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -55,7 +55,7 @@ import AVFoundation
         }
     }
     
-    func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
+    public func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
         let alert = UIAlertController(title: "", message: "Denied camera permissions granted", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         picker.present(alert, animated: true, completion: nil)
@@ -74,7 +74,7 @@ import AVFoundation
         vc.present(alert, animated: true, completion: nil)
     }
     
-     override func doneButtonTap() {
+    open override func doneButtonTap() {
         print("done tapped")
         self.dismiss(animated: true) {
             (self.row as? _VideoRow)?.value = self.selectedAssets.first
