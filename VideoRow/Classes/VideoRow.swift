@@ -261,7 +261,9 @@ extension VideoRow {
     
     func getUrlFromPHAsset(asset: PHAsset, callBack: @escaping (_ url: URL?) -> Void)
     {
-        asset.requestContentEditingInput(with: PHContentEditingInputRequestOptions(), completionHandler: { (contentEditingInput, dictInfo) in
+        let requestOptions = PHContentEditingInputRequestOptions()
+        requestOptions.isNetworkAccessAllowed = true
+        asset.requestContentEditingInput(with: requestOptions, completionHandler: { (contentEditingInput, dictInfo) in
             
             if let strURL = (contentEditingInput!.audiovisualAsset as? AVURLAsset)?.url.absoluteString
             {
